@@ -1,8 +1,24 @@
 aid: bumblebee-spaces
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bumblebee-spaces.png
 name: Bumblebee Spaces
-description: Bumblebee Spaces is a company surfaced as a portfolio company of bloomberg-beta, canaan-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Bumblebee Spaces is a San Francisco smart-home robotics company that builds app-controlled
+  motorized storage systems for compact urban living. Its ceiling-mounted robotic units lift beds, closets,
+  and storage bins up and out of the way, reclaiming floor space in small apartments, while a built-in
+  camera and mobile app track and retrieve stored belongings on demand. The company sells and installs
+  hardware plus a companion consumer mobile application; it does not currently publish a public developer
+  API, SDK, or developer portal. Backed by Bloomberg Beta and Canaan Partners, the profile is tracked in
+  the API Evangelist network as a portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/bumblebee-spaces/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Smart Home
+- Robotics
+- Storage
+- Home Automation
+- Consumer Hardware
+- IoT
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bumblebee-spaces-domain-security.yml
 - type: Website
   url: https://www.bumblebeespaces.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
